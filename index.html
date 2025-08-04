@@ -3,12 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>www.raid.org</title>
 </head>
+<style>
+    body{
+        background-color: rgb(39, 137, 161);
+    }
+
+
+
+    h1{
+        text-align: center;
+    }
+
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+
+    button{
+        width: 10%;
+        height: 5%;
+        background-color: rgb(12, 148, 42);
+        color: rgb(255, 255, 255);
+    }
+
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20cap;
+        height: 40cap;
+        background-color: rgb(0, 43, 56);
+        color: aliceblue;
+        margin-left: 30%;
+        padding: 3%;
+        border-radius: 20%;
+    }
+</style>
 <body>
+  
     <h1>Welcome To My Training</h1>
+    <div class="center">
+         <button type="submit" id="button" onclick="klik()"> Klik</button>     
+    </div>
+
+   
     <script>
         
+        const button = document.getElementById('button');
+
+        function klik(){
+            let klik = 0;
+            klik++;
+
+            if(klik === 1){
+                 alert("Hello Guys, Welcome to My Training");
+            }
+            
+        }
+
+        
+
+        
+
+        alert("Hello Guys")
+        //Ini adalah script untuk Menampilkan teks ke layar
+        document.write("Semangat Belajar Broo")
+
+        var nama ="Ahmad Reid"
+        kelas = "11 RPL 1"
+        umur = "16"
+        document.write("<br> Nama : "+ nama)
+        document.write("<br> Kelas :"+ kelas)
+        document.write("<br> umur : "+ umur)
+        
+
+        var x = 10;
+        var y = 5;
+
+        tambah = x + y;
+        kurang = x - y;
+        bagi = x / y;
+        kali = x * y;
+
+        
+             alert("Hasil Penjumlahan :"+ x +" + "+ y +" = " + tambah+"\n"+
+                 "Hasil Pengurangan :"+ x +" - "+ y +" = " + kurang +"\n"+
+                "Hasil Pembagian :"+ x +" : "+ y +" = " + bagi +"\n"+
+                "Hasil Perkalian :"+ x +" x "+ y +" = " + kali
+             )
+
+
+
+             
+            //  alert("Hasil Pengurangan :"+ x +" - "+ y +" = " + kurang)
+            //  alert("Hasil Pembagian :"+ x +" : "+ y +" = " + bagi)
+            //  alert("Hasil Perkalian :"+ x +" x "+ y +" = " + kali)
+        
+       
+
+
     </script>
 </body>
 </html>
