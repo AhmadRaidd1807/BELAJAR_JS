@@ -8,11 +8,12 @@
 <style>
     .form-group{
         display: flexbox;
-        width: 50ch;
+        width: 45ch;
         height: auto;
-        margin-left: 30%;
+        justify-content: center;
         background-color: rgb(155, 155, 155);
         padding: 2%;
+        padding-left: 3%;
         border-radius: 10%;
     }
     button{
@@ -29,6 +30,17 @@
 
     input{
         margin-top: 3%;
+        width: 45ch;
+        height: 4ch;
+        margin-bottom: 3%;
+    }
+
+    .atas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
     }
 
    
@@ -46,28 +58,77 @@
     <button type="submit" id="button" >Cek</button>
 
     </div> -->
-
+    <div class="atas">
     <div class="form-group">
 
-    <label>Masukan Nilai Pertama    :</label>
+    <h1>Kalkulator Sederhana</h1>
 
-    <input type="text" id="angkaUser1" placeholder="Masukan Angka Pertama">
+    <label>Masukan Nilai Pertama    :</label><br>
 
-    <label>Masukan Nilai Kedua      :</label>
+    <input type="text" id="angkaUser1" placeholder="Masukan Angka Pertama"><br>
 
-    <input type="text" id="angkaUser2" placeholder="Masukan Angka Kedua">
+    <label>Masukan Nilai Kedua      :</label><br>
 
-    <button type="submit" id="tambah" >Tambah +</button>
+    <input type="text" id="angkaUser2"  placeholder="Masukan Angka Kedua">
 
-    <button type="submit" id="kurang" >Kurang -</button>
+    <button type="submit" id="tambah" onclick="Tambah()">Tambah +</button>
 
-    <button type="submit" id="kali" >Kali X</button>
+    <button type="submit" id="kurang" onclick="Kurang()">Kurang -</button>
 
-    <button type="submit" id="bagi" >Bagi /</button>
+    <button type="submit" id="kali" onclick="Kali()">Kali X</button>
+
+    <button type="submit" id="bagi" onclick="Bagi()">Bagi /</button>
 
     </div>
+    </div>
+
 
     <script>
+
+        const angkaUser1 = document.getElementById('angkaUser1');
+        const angkaUser2 = document.getElementById('angkaUser2');
+        const tambah = document.getElementById('tambah');
+        const kurang = document.getElementById('kurang');
+        const kali = document.getElementById('kali');
+        const bagi = document.getElementById('bagi');
+
+
+      
+
+
+
+        function Tambah(){
+            let angka1 = parseInt(angkaUser1.value);
+             let angka2 = parseInt(angkaUser2.value);
+            let hasil = angka1 + angka2;
+            alert("Hasil Penjumlahan : " + hasil);
+        }
+
+        function Kurang(){
+            let angka1 = parseInt(angkaUser1.value);
+            let angka2 = parseInt(angkaUser2.value);
+            let hasil = angka1 - angka2;
+            alert("Hasil Pengurangan : "+ hasil)
+        }
+
+        function Kali(){
+            let angka1 = parseInt(angkaUser1.value);
+             let angka2 = parseInt(angkaUser2.value);
+            let hasil = angka * angka2;
+            alert("Hasil Perkalian : " + hasil);
+        }
+
+        function Bagi(){
+              let angka1 = parseInt(angkaUser1.value);
+        let angka2 = parseInt(angkaUser2.value);
+            let hasil = angka1 / angka2;
+            alert("Hasil Pembagian :" + hasil)
+        } 
+
+
+
+
+
         // const UserGrade = document.getElementById('nilaiUser')
         // const Button = document.getElementById('button')
 
